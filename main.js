@@ -28,10 +28,8 @@ document.querySelector('.color-6').addEventListener('click', changeBrush5)
 function changeBrush5() {
     classes.replace(classes[1], 'color-6')
 }
-// const square = document.querySelector('.square')
-// const classesSquare = square.classList;
+
 const allSquares = document.querySelectorAll('.square')
-// const squareClass =allSquares.classList
 let newSquares = Array.from(allSquares)
 const squareClass =newSquares.classList
 for (let i = 0; i < newSquares.length; i++) {

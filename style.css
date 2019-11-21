@@ -4,12 +4,14 @@
   height: 380px;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .headings {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .brush-selection {
@@ -50,11 +52,38 @@
 
 .canvas {
   display: grid;
-  grid-template-rows: 50px 50px 50px;
-  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: repeat(7, 18px);
+  grid-template-columns: repeat(7, 18px);
   border: 1px solid black;
+  
 }
 
 .square {
   transition: 0.5s;
+  
+}
+
+.color-1{
+  background: red;
+}
+.color-2{
+  background: blue;
+}
+.color-3{
+  background: green;
+}
+.color-4{
+  background: yellow;
+}
+.color-5{
+  background: pink;
+}
+
+#reset {
+  border: solid black;
+  background: red;
+
+}
+#reset:hover {
+  font-size: 30px;
 }
